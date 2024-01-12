@@ -19,8 +19,8 @@ export class DataBindingComponent implements OnInit, AfterViewInit {
   someBorderStyle = 'inline-block';
 
   @ViewChild('carouselContainer')
-  carouselContainer: ElementRef | any;
-  slidersArray: HTMLElement[] | any;
+  carouselContainer!: ElementRef;
+  slidersArray!: HTMLElement[];
 
   showSlide(index: number) {
     this.slidersArray.forEach((slide: HTMLElement, i: number) => {
