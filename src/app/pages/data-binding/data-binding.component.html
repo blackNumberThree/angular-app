@@ -1,0 +1,18 @@
+<button (click)="prevSlide($event)">previous</button>
+<div
+  #carouselContainer
+  class="carouselContainer"
+  (keypress)="nextSlide()"
+  [style.border]="someBorderStyle"
+>
+  <div class="carouselSlide" style="display: inline-block">
+    <img src="./assets/cat.jpg" alt="Image 1" />
+  </div>
+  <div class="carouselSlide">
+    <img src="./assets/cat1.jpg" alt="Image 2" />
+  </div>
+  <div class="carouselSlide">
+    <img [src]="img3SrcPath" alt="Image 3" />
+  </div>
+</div>
+<button (click)="nextSlide()">next</button>

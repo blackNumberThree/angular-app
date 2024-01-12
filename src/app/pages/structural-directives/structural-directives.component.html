@@ -1,0 +1,18 @@
+<h2>My List</h2>
+<ul class="items">
+  <li *ngFor="let item of users">
+    {{ item.name }}
+  </li>
+</ul>
+<h3>{{ users.length }} {{ users.length == 1 ? "item" : "items" }}</h3>
+<div class="items">
+  <div *ngFor="let item of users; let i = index">{{ i }} :{{ item.name }}</div>
+</div>
+<h1 *ngIf="users.length > 9">We have a lot of users</h1>
+
+<div [ngSwitch]="car">
+  <p *ngSwitchCase="'AUDI'">Do you prefere Audi ?</p>
+  <p *ngSwitchCase="'BMW'">This is BMW</p>
+  <p *ngSwitchCase="'Mercedes'">>I have new Mercedes</p>
+  <p *ngSwitchDefault>Car is undefined</p>
+</div>

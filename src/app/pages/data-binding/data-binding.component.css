@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.carouselContainer {
+  display: inline-flex;
+  justify-content: center;
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.carouselSlide {
+  display: none;
+}
+
+.carouselSlide img {
+  width: 400px;
+  height: auto;
+}
+button {
+  vertical-align: middle;
+}

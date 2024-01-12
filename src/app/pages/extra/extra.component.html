@@ -1,0 +1,12 @@
+<div>
+  <p>{{ changedText }}</p>
+  <input type="text" [(ngModel)]="changedText" />
+</div>
+<hr />
+<div #wrapper>
+  <p (click)="deleteElement(wrapper)">{{ simpleText }}</p>
+  <input #simpleInput type="text" />
+
+  <button (click)="changeSimpleText(simpleInput.value)">change text</button>
+</div>
+<hr />

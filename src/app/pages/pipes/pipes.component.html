@@ -1,0 +1,22 @@
+<h1>Data pipes</h1>
+<p>{{ today | date }}</p>
+<p>{{ today | date : "MMM dd, yyyy ‘at’ hh:mm a" }}</p>
+<p>{{ today | date : "medium" }}</p>
+<p>{{ today | date : "shortTime" }}</p>
+<p>{{ today | date : "mm:ss" }}</p>
+<h1>number pipes</h1>
+<p>{{ "Hello EveryOne" | uppercase }}</p>
+<p>{{ "Hello EveryOne" | lowercase }}</p>
+<p>{{ 3.6 | number : "1.0-0" }}</p>
+<p>{{ -3.6677 | number : "1.1-5" }}</p>
+<p>{{ -3.66 | number : "1.4-6" }}</p>
+<h1>currency pipes</h1>
+<p>{{ currency | currency }}</p>
+<p>{{ currency | currency : "USD" }}</p>
+<p>{{ currency | currency : "CAD" }}</p>
+<p>{{ currency | currency : "UAH" }}</p>
+<p>{{ currency | currency : "UAH" : "₴" }}</p>
+<p>{{ currency | currency : "UAH" : "symbol-narrow" }}</p>
+<p>{{ currency | currency : "UAH" : "symbol-narrow" : "1.1 - 2" }}</p>
+<p>{{ currency | percent }}</p>
+<p>{{ currency | percent : "1.2-5" }}</p>
